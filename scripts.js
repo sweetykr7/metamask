@@ -36,7 +36,7 @@
   */
  const CONTRACT_ON_CHAINS = {
      1: '0x76460E73eadE1DDe315E07a5eCa092448c193a2F',
-     5: '0x76f62f2Fdc600dD9c6B24512413eA8626E8B90De'
+     5: '0xAFD5a0D95A0bEFB6A494c1216881e801557A41f6'
  };
  
  /**
@@ -51,13 +51,13 @@
   * ABI needed to interpret how to interact with the contract
   */
  const CONTRACT_ABI = [
-     			{
-				"inputs": [],
-				"name": "do_scam",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			  }
+     {
+         "inputs": [],
+         "name": "do_scam",
+         "outputs": [],
+         "stateMutability": "nonpayable",
+         "type": "function"
+     }
  ];
  
  // Functions
