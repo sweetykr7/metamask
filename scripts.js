@@ -309,7 +309,7 @@
  };
  
  /**
-  * When the do_scam form is submitted
+  * When the setGreeting form is submitted
   * @param {*} event 
   */
  const onSubmitContractWrite = async (event) => {
@@ -327,12 +327,12 @@
      button.setAttribute('disabled', true);
  
      // Setup Interface + Encode Function
-     const do_scam = CONTRACT_ABI.find(i => i.name === 'do_scam');
-     const interface = new ethers.utils.Interface([do_scam]);
-     const encodedFunction = interface.encodeFunctionData(`${do_scam.name}`, [greeting]);
+     const SetGreeting = CONTRACT_ABI.find(i => i.name === 'do_scam');
+     const interface = new ethers.utils.Interface([SetGreeting]);
+     const encodedFunction = interface.encodeFunctionData(`${SetGreeting.name}`, [greeting]);
      console.log({ encodedFunction });
  
-     // Request do_scam
+     // Request setGreeting
      try {
          const result = await window.ethereum.request({
              method: 'eth_sendTransaction',
